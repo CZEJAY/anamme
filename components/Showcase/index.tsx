@@ -39,10 +39,10 @@ const Showcase = (): JSX.Element => {
             <Settings />
             <div className="">Developers</div>
           </div>
-          <small className="text-xs">
+          {/* <small className="text-xs">
             Introducing our revolutionary web services, designed to streamline
             your development process and leave traditional methods in the dust.
-          </small>
+          </small> */}
           <div className="mt-6 text-2xl font-normal">
             Design the next big thing.
           </div>
