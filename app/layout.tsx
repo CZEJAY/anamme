@@ -13,10 +13,10 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = ({
   title: "Anamme Nigeria Enterprise - IT & ICT Service Company",
-  description: "Anamme",
+  description: "Anamme Nigeria Enterprise - IT & ICT Service Company",
   openGraph: {
-    title: "Anamme",
-    description: "Anamme",
+    title: "Anamme Nigeria Enterprise - IT & ICT Service Company",
+    description: "Anamme Nigeria Enterprise - IT & ICT Service Company",
   },
 })
 

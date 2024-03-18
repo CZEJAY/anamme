@@ -6,7 +6,7 @@ import Link from "next/link";
 export default async function Footer() {
   return (
     <>
-      <div className="mx-auto text-3xl font-bold p-12">Join Our Satisfied Clients​ Today!</div>
+      <div className="mx-auto text-xl md:text-3xl font-bold p-12">Join Our Satisfied Clients​ Today!</div>
 
       <footer className="flex flex-col items-center justify-between gap-6 border-t border-slate-600 px-8 py-7 md:flex-row">
         <Link href="/">

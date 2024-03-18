@@ -25,8 +25,7 @@ const Bento = (): JSX.Element => {
       </div>
 
       <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
-        Introducing a new way of building components and layouts that leaves
-        everything else in the dust.
+      Introducing our revolutionary milestones, designed by our very best teams with industry standards leaving traditional methods in the dust.
       </div>
 
       <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">

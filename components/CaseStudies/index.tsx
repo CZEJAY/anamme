@@ -19,8 +19,7 @@ const CaseStudies = async (): Promise<JSX.Element> => {
       </h2>
 
       <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
-        Learn how thousands of designers have used Glisten’s mind-blowing AI
-        features in these case studies.
+        Learn about the services we offer, and which you'd like to embark on with us.
       </div>
 
       <div className="mt-20 grid gap-16">
