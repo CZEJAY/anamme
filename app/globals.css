@@ -1,33 +1,146 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+ 
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.glass-container {
+  position: relative;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.glass-container::before {
+  @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+  content: "";
+}
+
+.signal-line {
+  --rotation: 90deg;
+  @apply h-[20px] w-[1.5px] bg-gradient-to-t md:h-[1.5px] md:w-[30px] lg:w-[40px] xl:w-[50px];
+  background-color: hsla(0, 0%, 100%, 0.1);
+  background-image: linear-gradient(
+    var(--rotation),
+    rgba(255, 255, 255, 0) 50%,
+    #bfdbfe 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-size: 400% 400%;
+}
+
+@media (max-width: 767px) {
+  .signal-line {
+    --rotation: 0deg;
   }
+}
+
+
+/* Define the styles for the bento box element */
+.bento-box {
+  /* Set the position and dimensions of the box */
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  position: relative; /* Positioning context for pseudo-elements */
+
+  /* Add some padding and margin for spacing */
+  padding: 20px;
+  margin: 20px;
+  
+  /* Add a background color */
+  background-color: #f0f0f0; /* Adjust as needed */
+
+  /* Add box shadow for depth */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+}
+
+/* Create the glassy border effect using before and after pseudo-elements */
+.bento-box::before,
+.bento-box::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Positioning context relative to the box */
+  width: calc(100% - 40px); /* Adjust the width to ensure border doesn't overflow */
+  height: calc(100% - 40px); /* Adjust the height to ensure border doesn't overflow */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Adjust as needed for desired transparency */
+  z-index: -1; /* Push the border behind the box */
+}
+
+/* Position the before pseudo-element */
+.bento-box::before {
+  top: 10px; /* Adjust as needed for spacing */
+  left: 10px; /* Adjust as needed for spacing */
+}
+
+/* Position the after pseudo-element */
+.bento-box::after {
+  bottom: 10px; /* Adjust as needed for spacing */
+  right: 10px; /* Adjust as needed for spacing */
 }
