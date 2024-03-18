@@ -25,7 +25,7 @@ const Showcase = (): JSX.Element => {
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
 
       <AnimatedContent>
-        <h2 className="text-balance text-center text-5xl font-medium md:text-7xl">
+        <h2 className="text-balance capitalize text-center text-5xl font-medium md:text-7xl">
           lets create something awesome.
           <br />
           <span className="text-blue-500">
@@ -58,7 +58,7 @@ const Showcase = (): JSX.Element => {
             seamless integration and enhanced functionality for your development
             endeavors.
             <p className="mt-8">
-              We'll take care of the business logic for you, allowing you to
+              We&apos;ll take care of the business logic for you, allowing you to
               concentrate solely on crafting an exceptional website.
             </p>
           </div>
