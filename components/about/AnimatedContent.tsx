@@ -63,11 +63,11 @@ const AnimatedContent = () => {
         <div className="">
           <Image
             className="rounded-md object-cover image lg:w-[567px] lg:h-[450px] -translate-x-20 opacity-0  shadow-md"
-            src={"/Emmanuel-peter.jpg"}
+            src={"/ceo.jpg"}
             alt="MD/CEO"
             style={{ width: "auto", height: "auto" }}
-            width={567}
-            height={450}
+            width={520}
+            height={300}
             priority
           />
           <p className="font-semibold CEO text-sm text-center mt-3">
