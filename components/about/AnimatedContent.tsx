@@ -51,7 +51,7 @@ const AnimatedContent = () => {
     );
   }, []);
   return (
-    <div className="w-full flex-col overflow-hidden z-50 flex justify-between relative -translate-y-96 p-3 items-center glass-container opacity-0 about">
+    <div className="w-full flex-col overflow-hidden z-20 flex justify-between relative -translate-y-96 p-3 items-center glass-container opacity-0 about">
       <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
       <div className="absolute">
         <div className="gold text-xl md:text-3xl main opacity-0">About us</div>
