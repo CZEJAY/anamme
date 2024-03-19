@@ -57,7 +57,7 @@ const AnimatedContent = () => {
         <div className="gold text-xl md:text-3xl main opacity-0">About us</div>
         <StarBackground />
       </div>
-        <StarGrid />
+      <StarGrid />
 
       <div className="w-full flex flex-col md:flex-row items-center gap-9 about min-h-[200px] about mt-14">
         <div className="">
@@ -65,8 +65,10 @@ const AnimatedContent = () => {
             className="rounded-md object-cover image lg:w-[567px] lg:h-[450px] -translate-x-20 opacity-0  shadow-md"
             src={"/Emmanuel-peter.jpg"}
             alt="MD/CEO"
-            width={200}
-            height={200}
+            style={{ width: "auto", height: "auto" }}
+            width={567}
+            height={450}
+            priority
           />
           <p className="font-semibold CEO text-sm text-center mt-3">
             <AutoText
@@ -79,7 +81,7 @@ const AnimatedContent = () => {
           </p>
         </div>
 
-        <div className="content flex flex-col items-center max-w-3xl ml-auto h-[100%] p-12 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+        <div className="content hidden md:flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
           <p className="about_1 opacity-0 ">
             At our core, we represent a dynamic fusion of diverse expertise and
             seasoned professionals. Our team is meticulously crafted, comprising
@@ -106,6 +108,27 @@ const AnimatedContent = () => {
             We offer our clients the ability to automate and manage their
             business processes through cutting edge technological solutions
           </p>
+        </div>
+
+        <div className="flex md:hidden flex-col items-center">
+          <div className="content flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+            <p className="about_1 opacity-0">
+              Our team embodies a dynamic blend of seasoned professionals from
+              diverse backgrounds, each contributing unique expertise. With
+              decades of combined experience, we excel in software engineering,
+              data management, network integration, and project management. Our
+              synergy enables efficient execution and informed decision-making,
+              supported by proficient database analysts. We are committed to
+              excellence, adeptly navigating technological advancements to
+              deliver top-tier solutions to our clients.
+            </p>
+          </div>
+          <div className="content mt-5 flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+          <p className="mt-8 about_1 opacity-0">
+            We offer our clients the ability to automate and manage their
+            business processes through cutting edge technological solutions
+          </p>
+          </div>
         </div>
       </div>
     </div>
