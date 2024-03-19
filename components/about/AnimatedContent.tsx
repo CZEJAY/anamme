@@ -51,7 +51,7 @@ const AnimatedContent = () => {
     );
   }, []);
   return (
-    <div className="w-full flex-col overflow-hidden z-20 flex justify-between relative -translate-y-96 p-3 items-center glass-container opacity-0 about">
+    <div className="w-full flex-col rounded-md overflow-hidden z-20 flex justify-between relative -translate-y-96 p-3 items-center glass-container opacity-0 about">
       <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
       <div className="absolute">
         <div className="gold text-xl md:text-3xl main opacity-0">About us</div>
@@ -72,7 +72,7 @@ const AnimatedContent = () => {
           <p className="font-semibold CEO text-sm text-center mt-3">
             <AutoText
               className=""
-              delay={5000}
+              delay={8000}
               stopAfterFirst
               speed={100}
               textArray={["Emmanuel Peter — MD/CEO"]}
