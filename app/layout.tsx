@@ -4,6 +4,8 @@ import { DM_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
+import ThemeContextProvider from "@/context/theme-context";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -11,14 +13,14 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
-export const metadata: Metadata = ({
+export const metadata: Metadata = {
   title: "Anamme Nigeria Enterprise - IT & ICT Service Company",
   description: "Anamme Nigeria Enterprise - IT & ICT Service Company",
   openGraph: {
     title: "Anamme Nigeria Enterprise - IT & ICT Service Company",
     description: "Anamme Nigeria Enterprise - IT & ICT Service Company",
   },
-})
+};
 
 export default function RootLayout({
   children,
@@ -28,9 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={dmSans.variable}>
       <body className="grid bg-[#070815] text-white">
-        <Header />
-        {children}
-        <Footer />
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

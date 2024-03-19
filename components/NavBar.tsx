@@ -53,39 +53,14 @@ export default function NavBar({ settings }: NavBarProps) {
           </button>
 
           <div className="grid justify-items-end gap-8">
-            {/* {settings.data.navigation.map((item) => {
-              if (item.cta_button) {
+            {
+              navbarLinks.map((item) => {
+                const isActive = pathname === item.link;
                 return (
-                  <ButtonLink
-                    key={item.label}
-                    field={item.link}
-                    onClick={() => setOpen(false)}
-                    aria-current={
-                      pathname.includes(asLink(item.link) as string)
-                        ? "page"
-                        : undefined
-                    }
-                  >
-                    {item.label}
-                  </ButtonLink>
-                );
-              }
-              return (
-                <PrismicNextLink
-                  key={item.label}
-                  className="block px-3 text-3xl first:mt-8"
-                  field={item.link}
-                  onClick={() => setOpen(false)}
-                  aria-current={
-                    pathname.includes(asLink(item.link) as string)
-                      ? "page"
-                      : undefined
-                  }
-                >
-                  {item.label}
-                </PrismicNextLink>
-              );
-            })} */} LINK
+                  <Link className={clsx("text-white", isActive && "text-blue-500 border-b-2 border-blue-500")} href={item.link} key={item.title}>{item.title}</Link>
+                )
+              })
+            }
           </div>
         </div>
 
@@ -93,8 +68,9 @@ export default function NavBar({ settings }: NavBarProps) {
         <div className=" hidden gap-6 md:flex">
             {
               navbarLinks.map((item) => {
+                const isActive = pathname === item.link;
                 return (
-                  <Link href={item.link} key={item.title}>{item.title}</Link>
+                  <Link className={clsx("text-white", isActive && "text-blue-500 border-b-2 border-blue-500")} href={item.link} key={item.title}>{item.title}</Link>
                 )
               })
             }

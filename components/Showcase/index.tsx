@@ -25,8 +25,8 @@ const Showcase = (): JSX.Element => {
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
 
       <AnimatedContent>
-        <h2 className="text-balance capitalize text-center text-5xl font-medium md:text-7xl">
-          lets create something awesome.
+        <h2 className="text-balance capitalize text-center text-2xl font-medium md:text-7xl">
+          create something awesome.
           <br />
           <span className="text-blue-500">
             <span className="text-balance">AME</span>

@@ -29,7 +29,7 @@ const Bento = (): JSX.Element => {
       </div>
 
       <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
-        {milestones.map((item) => {
+        {milestones.map((item, index) => {
             const Icon = item.icon
           return (
             <div
@@ -48,7 +48,16 @@ const Bento = (): JSX.Element => {
               </div>
               {/* <Image alt="image" src={item.image} width={100} height={100}  className="max-h-36 w-auto" />  */}
               <Icon size={30} />
-              
+              {/* {index !== milestones.length - 1 && (
+              <div
+                className={clsx(
+                  "signal-line",
+                  index >= Math.floor(milestones.length / 2)
+                    ? "rotate-180"
+                    : "rotate-0",
+                )}
+              />
+            )} */}
             </div>
           )
         })}

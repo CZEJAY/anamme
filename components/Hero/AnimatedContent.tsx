@@ -63,27 +63,31 @@ export default function AnimatedContent() {
   return (
     <div className="relative" ref={container}>
       <StarGrid />
-      <h1 className="hero__heading text-balance text-5xl font-medium opacity-0 md:text-7xl">
-      Anamme Nigeria Enterprise IT & ICT Service Company
+      <h1 className="hero__heading flex flex-col items-center gap-3 text-balance text-5xl font-medium opacity-0 md:text-6xl">
+        Anamme Nigeria Enterprise
+      <span className="text-sm md:text-xl lg:text-2xl font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">IT & ICT Service Company</span>
       </h1>
 
-        <div className="hero__body mx-auto mt-6 max-w-md text-balance text-slate-300 opacity-0">
-        The features you need to transport your business from the little leagues to the big time.
-        </div>
-      
-      
-        <ButtonLink
-          className="hero__button mt-8 opacity-0"
-        >
-          Learn more
-        </ButtonLink>
-      
-        <div className="hero__image glass-container mt-16 w-fit opacity-0">
-          <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
-          
-          <Image className="w-full brightness-50" src={"/hero.jpg"} alt="hero" width={900} height={900}/> 
-        </div>
-     
+      <div className="hero__body mx-auto mt-6 max-w-md text-balance text-slate-300 opacity-0">
+        The services you need to transport your business from the little leagues
+        to the big time.
+      </div>
+
+      <ButtonLink className="hero__button mt-8 opacity-0">
+        Learn more
+      </ButtonLink>
+
+      <div className="hero__image glass-container mt-16 w-fit opacity-0">
+        <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
+
+        <Image
+          className="w-full brightness-50"
+          src={"/hero.jpg"}
+          alt="hero"
+          width={900}
+          height={900}
+        />
+      </div>
     </div>
   );
 }

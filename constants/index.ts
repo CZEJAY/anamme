@@ -1,5 +1,6 @@
-import { Computer, Figma, Github, PaintBucket, SheetIcon } from "lucide-react"
-import { BsHouse, BsWater } from "react-icons/bs"
+import { Computer, Figma, Github, HandHelping, PaintBucket, SheetIcon, Target, WorkflowIcon } from "lucide-react"
+import React from "react";
+import { BsHouse, BsQuestionCircle, BsWater } from "react-icons/bs"
 import { CgNpm } from "react-icons/cg";
 import { DiDigitalOcean } from "react-icons/di";
 import { FaCloudflare, FaFly } from "react-icons/fa6";
@@ -129,3 +130,74 @@ export const integrations = [
     //     icon: GiThunderBlade
     // },
 ]
+
+export const aboutText1 = [
+    `At our core, we represent a dynamic fusion of diverse expertise and\n
+    seasoned professionals. Our team is meticulously crafted, comprising\n
+    a mosaic of highly skilled individuals spanning various fields, each\n
+    bringing their unique strengths to the table. From seasoned software\n
+    engineers adept at crafting innovative solutions to astute data\n
+    warehouse experts proficient in handling vast troves of information,\n
+    our collective experience spans decades. Moreover, our ensemble\n
+    includes adept network and communications specialists who ensure the\n
+    seamless integration and fluid functionality of our systems. Working\n
+    in tandem with our project managers, who possess a wealth of\n
+    knowledge in orchestrating successful ventures, we synergize our\n
+    efforts for efficient project execution. Additionally, our team\n
+    boasts database analysts proficient in dissecting intricate data\n
+    patterns, allowing us to derive actionable insights and drive\n
+    informed decisions. Collectively, we wield a combined industry\n
+    experience exceeding two decades, a testament to our unwavering\n
+    commitment to excellence. This wealth of experience not only\n
+    signifies our proficiency in navigating the ever-evolving\n
+    technological landscape but also underscores our dedication to\n
+    delivering top-tier solutions and services to our clients.`
+]
+
+export const anammeTree = [
+    {
+        title: "Who are we",
+        description:"Anamme Nigeria Enterprise is a dynamic team of skilled professionals with a passion for leveraging technology to drive business success. With years of collective experience in the IT and ICT industry, our team brings a wealth of knowledge and expertise to every project we undertake.",
+        icon: React.createElement(BsQuestionCircle),
+    },
+    {
+        title: "What we do",
+        description:"We offer a wide range of IT and ICT services, including website development, software development, database management, web and mobile applications, and computer-based testing. Our team is constantly evolving and expanding, adding new skills and resources as needed.",
+        icon: React.createElement(WorkflowIcon),
+    },
+    {
+        title: "Why choose us",
+        description:"We are a trusted partner in the IT and ICT industry, providing innovative solutions and services that drive business growth and profitability. Our team is committed to delivering unparalleled service and support to our clients, helping them navigate the complexities of the digital landscape with confidence and ease.",
+        icon: React.createElement(HandHelping),
+    },
+    {
+        title: "Our Mission",
+        description: "Our mission at Anamme Nigeria Enterprise is simple yet profound: to empower businesses and individuals with cutting-edge IT and ICT solutions that enhance efficiency, productivity, and overall success. We are committed to delivering unparalleled service and support to our clients, helping them navigate the complexities of the digital landscape with confidence and ease.",
+        icon: React.createElement(Target)
+    },
+]
+
+export const anammeNigeriaEnterprise = {
+    companyName: "Anamme Nigeria Enterprise",
+    companyType: "IT & ICT Service Company",
+    about: {
+      whoWeAre:
+        "Our mission at Anamme Nigeria Enterprise is simple yet profound: to empower businesses and individuals with cutting-edge IT and ICT solutions that enhance efficiency, productivity, and overall success. We are committed to delivering unparalleled service and support to our clients, helping them navigate the complexities of the digital landscape with confidence and ease.",
+      whatWeDo:
+        "At Anamme Nigeria Enterprise, we offer a comprehensive range of IT and ICT services designed to address the diverse needs of modern businesses. From bespoke software development and web design to network infrastructure setup and cybersecurity solutions, we have the skills and resources to deliver results that exceed expectations.",
+      whyChooseUs:
+        "Choosing Anamme Nigeria Enterprise as your IT & ICT service provider means partnering with a team that is dedicated to your success. With a customer-centric approach, transparent communication, and a proven track record of delivering results, we are the trusted choice for businesses of all sizes across Nigeria.",
+    },
+    contact: {
+      email: "info@anammenigeria.com",
+      phone: "+234-XXX-XXXXXXX",
+      address: "123 Main Street, Lagos, Nigeria",
+      website: "www.anammenigeria.com",
+    },
+  };
+  
+  // Example usage:
+  console.log(anammeNigeriaEnterprise.companyName);
+  console.log(anammeNigeriaEnterprise.about.whoWeAre);
+  console.log(anammeNigeriaEnterprise.contact.email);
+  

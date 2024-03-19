@@ -144,3 +144,61 @@
   bottom: 10px; /* Adjust as needed for spacing */
   right: 10px; /* Adjust as needed for spacing */
 }
+
+.autoText {
+  /* font-size: 2.95em; */
+  font-weight: bold;
+  /* border-right: 2px solid #efd7d7; */
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: blink-caret 0.75s step-end infinite; */
+  font-family: 'Times New Roman', Times, serif;
+  /* font-style: italic; */
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.gradient{
+  @apply bg-gradient-to-r from-blue-500 via-primary to-sky-300
+}
+
+.gold{
+  @apply font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent
+}
+
+.fade-in-animation {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 12px; /* Adjust the width and height to change the size of the ball */
+  height: 12px;
+  border-radius: 50%; /* Make the shape a circle */
+  background-color: white; /* Set the color of the ball */
+  animation: blink-caret 1s infinite; /* Apply the blinking animation */
+}
+
+@keyframes blink-caret {
+  0%, 50% {
+    opacity: 1; /* Make the caret visible */
+  }
+  51%, 100% {
+    opacity: 0; /* Make the caret invisible */
+  }
+}
+
