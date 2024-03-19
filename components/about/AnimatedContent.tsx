@@ -62,12 +62,11 @@ const AnimatedContent = () => {
       <div className="w-full flex flex-col md:flex-row items-center gap-9 about min-h-[200px] about mt-14">
         <div className="">
           <Image
-            className="rounded-md object-cover image lg:w-[567px] lg:h-[450px] -translate-x-20 opacity-0  shadow-md"
+            className="rounded-md object-cover  w-[300px] h-[28rem] image lg:w-[567px] lg:h-[450px] -translate-x-20 opacity-0  shadow-md"
             src={"/ceo.jpg"}
             alt="MD/CEO"
-            style={{ width: "auto", height: "auto" }}
-            width={520}
-            height={300}
+            width={200}
+            height={200}
             priority
           />
           <p className="font-semibold CEO text-sm text-center mt-3">
@@ -81,8 +80,8 @@ const AnimatedContent = () => {
           </p>
         </div>
 
-        <div className="content hidden md:flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
-          <p className="about_1 opacity-0 ">
+        <div className="content hidden md:flex flex-col text-center lg:text-left items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+          <p className="about_1 opacity-0">
             At our core, we represent a dynamic fusion of diverse expertise and
             seasoned professionals. Our team is meticulously crafted, comprising
             a mosaic of highly skilled individuals spanning various fields, each
