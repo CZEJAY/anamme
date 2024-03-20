@@ -80,11 +80,12 @@ export default function AnimatedContent() {
         <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
 
         <Image
-          className="w-full brightness-50"
+          className="w-full brightness-90"
           src={"/hero.jpg"}
           alt="hero"
           width={900}
           height={900}
+          priority
         />
       </div>
     </div>
