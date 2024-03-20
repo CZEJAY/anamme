@@ -15,11 +15,10 @@ import { anammeTree } from "@/constants";
 export default function AboutTree() {
   const { ref } = useSectionInView("about");
   const { theme } = useTheme();
-  
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>AME Tree</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="rgba(255, 255, 255, 0.05)" className="animate-pulse">
         {anammeTree.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement

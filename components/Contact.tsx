@@ -8,13 +8,11 @@ import SubmitBtn from "./submit-btn";
 // import toast from "react-hot-toast";
 
 export default function ContactForm() {
-  const { ref } = useSectionInView("Contact");
-  const [data, setData] = React.useState<any>({input: "", textArea: ""});
+  const [data, setData] = React.useState<any>({email: "", textArea: "", fullname: "", subject: ""});
 
   return (
     <section
       id="contact"
-      ref={ref}
       className="mb-20 sm:mb-28 glass-container p-4 px-6 w-[min(100%,38rem)] text-center"
     >
       <SectionHeading>Send Us a Message</SectionHeading>
@@ -29,50 +27,50 @@ export default function ContactForm() {
 
       <form
         className="mt-10 flex flex-col gap-6 dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+        // action={async (formData) => {
+        //   const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            // toast.error(error);
-            return;
-          }
+        //   if (error) {
+        //     // toast.error(error);
+        //     return;
+        //   }
 
-          // toast.success("Email sent successfully!");
-          setData({input: "", textArea: ""});
-        }}
+        //   // toast.success("Email sent successfully!");
+        //   setData({email: "", textArea: "", fullname: "", subject: ""});
+        // }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="contact-input"
           name="fullname"
           type="text"
-          value={data.input}
-          onChange={(e) => setData({...data, input: e.target.value})}
+          value={data.fullname}
+          onChange={(e) => setData({...data, fullname: e.target.value})}
           required
           maxLength={500}
           placeholder="Fullname"
         />
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="contact-input"
           name="senderEmail"
           type="email"
-          value={data.input}
-          onChange={(e) => setData({...data, input: e.target.value})}
+          value={data.email}
+          onChange={(e) => setData({...data, email: e.target.value})}
           required
           maxLength={500}
           placeholder="Your email"
         />
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="contact-input"
           name="subject"
           type="text"
-          value={data.input}
-          onChange={(e) => setData({...data, input: e.target.value})}
+          value={data.subject}
+          onChange={(e) => setData({...data, subject: e.target.value})}
           required
           maxLength={500}
           placeholder="Subject"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 placeholder:font-medium placeholder:text-gray-950 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           value={data.textArea}
           onChange={(e) => setData({...data, textArea: e.target.value})}

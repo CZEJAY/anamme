@@ -48,7 +48,7 @@ export default function NavBar({ settings }: NavBarProps) {
       {isContact && <StarBackground />}
       {isContact && <StarGrid />}
       <div className="mx-auto flex max-w-6xl flex-col justify-between py-2 font-medium text-white md:flex-row md:items-center">
-        <div className="flex items-center justify-between">
+        <div className="flex z-50 items-center justify-between">
           <Link href="/" className="z-50">
             <WordMark />
             <span className="sr-only">Anamme Home Page</span>
@@ -56,7 +56,7 @@ export default function NavBar({ settings }: NavBarProps) {
           <Sheet>
             <SheetTrigger>
               <MdMenu
-                className="text-gray-950  dark:text-gray-50 flex md:hidden"
+                className="text-gray-950 z-50 cursor-pointer dark:text-gray-50 flex md:hidden"
                 size={28}
               />
             </SheetTrigger>

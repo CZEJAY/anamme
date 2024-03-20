@@ -2,7 +2,7 @@
 import ButtonLink from "@/components/ButtonLink";
 import StarGrid from "@/components/StarGrid";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
@@ -12,7 +12,6 @@ export default function AnimatedContent() {
   const container = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
   gsap.registerPlugin(useGSAP);
-
   useGSAP(
     () => {
       if (prefersReducedMotion) {

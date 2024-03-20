@@ -79,6 +79,10 @@
   position: relative;
 }
 
+.contact-input{
+  @apply h-14 px-4 rounded-lg dark:bg-white placeholder:font-medium placeholder:text-gray-950 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none
+}
+
 .glass-container::before {
   @apply absolute -inset-[10px] -z-10 rounded-xl border bg-slate-800/10 border-slate-700/20 dark:border-slate-100/20 dark:bg-slate-200/10 backdrop-blur-md;
   content: "";

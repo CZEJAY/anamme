@@ -1,4 +1,4 @@
-import { Computer, Figma, Github, HandHelping, MapPin, PaintBucket, SheetIcon, Target, WorkflowIcon } from "lucide-react"
+import { Computer, Figma, Github, HandHelping, MailOpen, MapPin, PaintBucket, SheetIcon, Target, WorkflowIcon } from "lucide-react"
 import React from "react";
 import { BsHouse, BsQuestionCircle, BsWater } from "react-icons/bs"
 import { CgNpm } from "react-icons/cg";
@@ -8,6 +8,7 @@ import { FiFigma } from "react-icons/fi";
 import { GiThunderBlade } from "react-icons/gi";
 import { GrGoogle } from "react-icons/gr";
 import { MdBallot, MdReport } from "react-icons/md"
+import { PiPhoneCallFill } from "react-icons/pi";
 
 export const navbarLinks = [
     {
@@ -181,20 +182,23 @@ export const contactInfo = [
     {
         title: "Main Office",
         description: "No. 4 Parke Close, Plot 248 Aguiyi Ironsi Road, Maitama, FCT Abuja",
-        icon: React.createElement(MapPin)
+        icon: MapPin
     },
     {
         title: "Write us",
-        description: "info@anamme.ng"
+        description: "info@anamme.ng",
+        icon: MailOpen,
+        isMail: true
     },
     {
         title: "Call Us 24x7",
-        description: "+234 809 991 1042"
+        description: "+234 809 991 1042",
+        icon: PiPhoneCallFill
     },
     {
         title: "Branch Offices",
         description: "78 IBB way Calabar, Cross River State",
         decription2: "No. 3 Udoutung Ubo Street Uyo",
-        icon: React.createElement(MapPin)
+        icon: MapPin
     },
 ]

@@ -1,3 +1,4 @@
+"use client"
 import ContactForm from '@/components/Contact'
 import Gradient from '@/components/Contact/Gradient'
 import React from 'react'

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -32,6 +32,8 @@ export default function AnimatedContent() {
     figma: <FaFigma />,
     fly: <FaFly />,
   };
+
+  
 
   useGSAP(
     () => {
@@ -98,7 +100,6 @@ export default function AnimatedContent() {
     },
     { scope: container },
   );
-
   return (
     <div
       className="mt-20 flex flex-col items-center md:flex-row"
