@@ -18,7 +18,7 @@ export default function AboutTree() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>AME Tree</SectionHeading>
-      <VerticalTimeline lineColor="rgba(255, 255, 255, 0.05)" className="animate-pulse">
+      <VerticalTimeline lineColor="rgba(255, 255, 255, 0.05)">
         {anammeTree.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
