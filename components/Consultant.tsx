@@ -4,7 +4,7 @@ import ButtonLink from './ButtonLink'
 const Consultant = () => {
   return (
     <div className='mx-auto mb-4'>
-        <ButtonLink>
+        <ButtonLink href='/contact'>
             Book a consultation
         </ButtonLink>
     </div>

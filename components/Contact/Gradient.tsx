@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -10,7 +9,8 @@ import "react-vertical-timeline-component/style.min.css";
 // import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import { useSectionInView } from "@/lib/hooks";
-import { anammeTree } from "@/constants";
+import { anammeTree, contactInfo } from "@/constants";
+import SectionHeading from "../section-heading";
 
 export default function AboutTree() {
   const { ref } = useSectionInView("about");
@@ -18,9 +18,9 @@ export default function AboutTree() {
   
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>AME Tree</SectionHeading>
+      {/* <SectionHeading>AME Tree</SectionHeading> */}
       <VerticalTimeline lineColor="">
-        {anammeTree.map((item, index) => (
+        {contactInfo.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
@@ -49,6 +49,9 @@ export default function AboutTree() {
               {/* <p className="font-normal !mt-0">{item.location}</p> */}
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
+              </p>
+              <p className="mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {item?.decription2}
               </p>
             </VerticalTimelineElement>
           </React.Fragment>

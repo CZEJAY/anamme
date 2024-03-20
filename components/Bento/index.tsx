@@ -20,11 +20,11 @@ const Bento = (): JSX.Element => {
           Milestones
         </h2>
         <em className="text-4xl md:text-6xl font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">
-          Gold Standard<span className="text-gray-50">.</span>
+          Gold Standard<span className="text-gray-950 dark:text-gray-50">.</span>
         </em>
       </div>
 
-      <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
+      <div className="mx-auto mt-6 max-w-md text-balance text-center text-gray-600 dark:text-gray-300 font-medium">
       Introducing our revolutionary milestones, designed by our very best teams with industry standards leaving traditional methods in the dust.
       </div>
 
@@ -40,14 +40,14 @@ const Bento = (): JSX.Element => {
               key={item.title}
             >
               {/* <Icon className="absolute top-2 -right-1 h-8 w-8 text-balance" /> */}
-              <h3 className="text-2xl">
+              <h3 className="text-2xl text-gray-50 ">
                 {item.title} 
               </h3>
               <div className="max-w-md text-balance text-slate-300">
                 {item.short}
               </div>
               {/* <Image alt="image" src={item.image} width={100} height={100}  className="max-h-36 w-auto" />  */}
-              <Icon size={30} />
+              <Icon size={30} className="text-gray-50"/>
               {/* {index !== milestones.length - 1 && (
               <div
                 className={clsx(

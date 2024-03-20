@@ -1,9 +1,12 @@
+"use client"
 import WordMark from "@/components/WordMark";
 import { navbarLinks } from "@/constants";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default async function Footer() {
+  const pathname = usePathname()
   return (
     <>
       <div className="mx-auto text-sm sm:text-xl md:text-3xl font-bold p-12">Join Our Satisfied Clients​ Today!</div>
@@ -20,8 +23,9 @@ export default async function Footer() {
         <nav aria-label="Footer">
           <div className="flex gap-6">
             {navbarLinks.map((item) => {
+              const isActive = pathname === item.link;
               return (
-                <Link key={item.title} href={item.link}>
+                <Link className={`text-xs ${isActive && "bg-gray-700/5 rounded py-1 px-2"}`} key={item.title} href={item.link}>
                   {item.title}
                 </Link>
               );

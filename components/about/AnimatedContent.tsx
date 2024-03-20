@@ -80,7 +80,7 @@ const AnimatedContent = () => {
           </p>
         </div>
 
-        <div className="content hidden md:flex flex-col text-center lg:text-left items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+        <div className="content font-medium hidden md:flex flex-col text-center lg:text-left items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/5 overflow-hidden">
           <p className="about_1 opacity-0">
             At our core, we represent a dynamic fusion of diverse expertise and
             seasoned professionals. Our team is meticulously crafted, comprising
@@ -109,8 +109,8 @@ const AnimatedContent = () => {
           </p>
         </div>
 
-        <div className="flex md:hidden flex-col items-center">
-          <div className="content flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+        <div className="flex md:hidden flex-col items-center font-medium">
+          <div className="content flex flex-col text-center items-center max-w-3xl ml-auto bg-gray-950/5 h-[100%] p-9 rounded-md shadow-sm dark:bg-gray-900/25 overflow-hidden">
             <p className="about_1 opacity-0">
               Our team embodies a dynamic blend of seasoned professionals from
               diverse backgrounds, each contributing unique expertise. With
@@ -118,7 +118,7 @@ const AnimatedContent = () => {
               data management, network integration, and project management.
             </p>
           </div>
-          <div className="content mt-5 flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+          <div className="content mt-5 flex flex-col text-center items-center max-w-3xl bg-gray-950/5 ml-auto h-[100%] p-9 rounded-md shadow-sm dark:bg-gray-900/25 overflow-hidden">
             <p className="mt-8 about_1 opacity-0">
               Our synergy enables efficient execution and informed
               decision-making, supported by proficient database analysts. We are
@@ -126,7 +126,7 @@ const AnimatedContent = () => {
               advancements to deliver top-tier solutions to our clients.
             </p>
           </div>
-          <div className="content mt-5 flex flex-col text-center items-center max-w-3xl ml-auto h-[100%] p-9 rounded-md shadow-sm bg-gray-900/25 overflow-hidden">
+          <div className="content mt-5 flex flex-col text-center items-center max-w-3xl bg-gray-950/5 ml-auto h-[100%] p-9 rounded-md shadow-sm dark:bg-gray-900/25 overflow-hidden">
             <p className="mt-8 about_1 opacity-0">
               We offer our clients the ability to automate and manage their
               business processes through cutting edge technological solutions

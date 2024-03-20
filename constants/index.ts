@@ -1,4 +1,4 @@
-import { Computer, Figma, Github, HandHelping, PaintBucket, SheetIcon, Target, WorkflowIcon } from "lucide-react"
+import { Computer, Figma, Github, HandHelping, MapPin, PaintBucket, SheetIcon, Target, WorkflowIcon } from "lucide-react"
 import React from "react";
 import { BsHouse, BsQuestionCircle, BsWater } from "react-icons/bs"
 import { CgNpm } from "react-icons/cg";
@@ -177,27 +177,24 @@ export const anammeTree = [
     },
 ]
 
-export const anammeNigeriaEnterprise = {
-    companyName: "Anamme Nigeria Enterprise",
-    companyType: "IT & ICT Service Company",
-    about: {
-      whoWeAre:
-        "Our mission at Anamme Nigeria Enterprise is simple yet profound: to empower businesses and individuals with cutting-edge IT and ICT solutions that enhance efficiency, productivity, and overall success. We are committed to delivering unparalleled service and support to our clients, helping them navigate the complexities of the digital landscape with confidence and ease.",
-      whatWeDo:
-        "At Anamme Nigeria Enterprise, we offer a comprehensive range of IT and ICT services designed to address the diverse needs of modern businesses. From bespoke software development and web design to network infrastructure setup and cybersecurity solutions, we have the skills and resources to deliver results that exceed expectations.",
-      whyChooseUs:
-        "Choosing Anamme Nigeria Enterprise as your IT & ICT service provider means partnering with a team that is dedicated to your success. With a customer-centric approach, transparent communication, and a proven track record of delivering results, we are the trusted choice for businesses of all sizes across Nigeria.",
+export const contactInfo = [
+    {
+        title: "Main Office",
+        description: "No. 4 Parke Close, Plot 248 Aguiyi Ironsi Road, Maitama, FCT Abuja",
+        icon: React.createElement(MapPin)
     },
-    contact: {
-      email: "info@anammenigeria.com",
-      phone: "+234-XXX-XXXXXXX",
-      address: "123 Main Street, Lagos, Nigeria",
-      website: "www.anammenigeria.com",
+    {
+        title: "Write us",
+        description: "info@anamme.ng"
     },
-  };
-  
-  // Example usage:
-  console.log(anammeNigeriaEnterprise.companyName);
-  console.log(anammeNigeriaEnterprise.about.whoWeAre);
-  console.log(anammeNigeriaEnterprise.contact.email);
-  
+    {
+        title: "Call Us 24x7",
+        description: "+234 809 991 1042"
+    },
+    {
+        title: "Branch Offices",
+        description: "78 IBB way Calabar, Cross River State",
+        decription2: "No. 3 Udoutung Ubo Street Uyo",
+        icon: React.createElement(MapPin)
+    },
+]

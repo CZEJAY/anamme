@@ -68,12 +68,12 @@ export default function AnimatedContent() {
       <span className="text-sm md:text-xl lg:text-2xl font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">IT & ICT Service Company</span>
       </h1>
 
-      <div className="hero__body mx-auto mt-6 max-w-md text-balance text-slate-300 opacity-0">
+      <div className="hero__body mx-auto mt-6 max-w-md text-balance font-medium text-gray-600 dark:text-gray-300 opacity-0">
         The services you need to transport your business from the little leagues
         to the big time.
       </div>
 
-      <ButtonLink className="hero__button mt-8 opacity-0">
+      <ButtonLink className="hero__button mt-8 opacity-0" href="/about">
         Learn more
       </ButtonLink>
 
