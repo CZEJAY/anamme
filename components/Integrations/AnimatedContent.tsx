@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa6";
 import { integrations } from "@/constants";
 import WordMark from "../WordMark";
+import Image from "next/image";
 
 export default function AnimatedContent() {
   const container = useRef(null);
@@ -117,14 +118,12 @@ export default function AnimatedContent() {
                 <div className="signal-line rotate-180 bg-gradient-to-t" />
               </>
             )}
-            <div className="pulsing-icon  relative flex aspect-square shrink-0 items-center justify-center rounded-full border border-blue-50/30 bg-blue-50/25 p-3 text-3xl text-blue-100 opacity-40 md:text-4xl lg:text-5xl">
+            <div className="pulsing-icon  relative flex aspect-square shrink-0 items-center justify-center rounded-full border border-blue-50/30 bg-gray-50 p-3 text-3xl text-blue-100 opacity-40 md:text-4xl lg:text-5xl">
               {/* <Icon /> */}
-              <div className="block">
-                {item.title.substring(0, 2)}
-                {/* <small className="text-xs">{item.title}</small> */}
-              </div>
-              <div  className="text-xs w-40 text-center font-bold  italic absolute -bottom-4  lg:-bottom-5">
+                <Image className="h-14 w-14 object-cover" sizes="" src={item.icon} alt={item.title} width={50} height={50} />
+              <div  className="text-xs w-40 text-center flex flex-col items-center mt-5 font-bold  italic absolute -bottom-4  lg:-bottom-5">
                 {item.title}
+                <p className="text-xs hidden text-foreground absolute -bottom-8 capitalize w-24 lg:block text-center text-clip ml-1">{item.optional}</p>
               </div>
             </div>
             {index !== integrations.length - 1 && (

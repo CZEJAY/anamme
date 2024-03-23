@@ -47,7 +47,7 @@ export const milestones = [
         wide: true,
         short: "Manages hostel facilities, ensuring optimal resource utilization and improved student satisfaction at the University of Uyo.",
         body: "Similar to the UNICAL Hostel Management System, this system is specifically designed for managing hostel facilities at the University of Uyo (UNIUYO). It facilitates seamless administration of hostel operations, ensuring optimal utilization of resources and improved student satisfaction.",
-        image: "https://source.unsplash.com/800x600/?university"
+        image: "https://source.unsplash.com/800x600/?University"
     },
     {
         title: "UNIUYO CBT for GST",
@@ -108,24 +108,26 @@ export const services = [
 
 export const integrations = [
     {
-        icon: DiDigitalOcean,
-        title: "UNIUYO"
+        icon: '/uniuyo.png',
+        title: "University of Uyo"
     },
     {
-        icon: FaCloudflare,
-        title: "UNICAL"
+        icon: '/unical.png',
+        title: "University of Calabar"
     },
     {
-        icon: CgNpm,
+        icon: '/unicef.png',
         title: "UNICEF"
     },
     {
-        icon: FiFigma,
-        title: "NEKEDE"
+        icon: '/nkede.png',
+        title: "NEKEDE",
+        optional: 'federal polytechnic'
     },
     {
-        icon: FaFly,
-        title: "ALVAN IKOKU"
+        icon: '/alvanikoku.png',
+        title: "Alvan Ikoku",
+        optional: ' Federal College of Education'
     },
     // {
     //     icon: GiThunderBlade
