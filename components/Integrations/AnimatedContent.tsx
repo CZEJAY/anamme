@@ -113,7 +113,7 @@ export default function AnimatedContent() {
             {index === Math.floor(integrations.length / 2) && (
               <>
                 <div className="pulsing-icon relative flex aspect-square shrink-0 items-center justify-center rounded-full border border-blue-50/30 bg-blue-500/25 p-3 text-3xl text-blue-100 opacity-40 md:text-4xl lg:text-5xl">
-                AME<span className="text-xs font-bold text-white italic absolute top-5 lg:top-8 right-0">ng</span>
+                ANE<span className="text-xs font-bold text-white italic absolute top-5 lg:top-8 right-0">ng</span>
                 </div>
                 <div className="signal-line rotate-180 bg-gradient-to-t" />
               </>

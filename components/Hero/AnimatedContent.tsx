@@ -64,7 +64,7 @@ export default function AnimatedContent() {
       <StarGrid />
       <h1 className="hero__heading flex flex-col items-center gap-3 text-balance text-5xl font-medium opacity-0 md:text-6xl">
         Anamme Nigeria Enterprise
-      <span className="text-sm md:text-xl lg:text-2xl font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">IT & ICT Service Company</span>
+      <span className="text-sm md:text-xl lg:text-2xl font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">ICT Service Company</span>
       </h1>
 
       <div className="hero__body mx-auto mt-6 max-w-md text-balance font-medium text-gray-600 dark:text-gray-300 opacity-0">

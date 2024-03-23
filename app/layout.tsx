@@ -15,11 +15,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Anamme Nigeria Enterprise - IT & ICT Service Company",
-  description: "Anamme Nigeria Enterprise - IT & ICT Service Company",
+  title: "Anamme Nigeria Enterprise ICT Service Company",
+  description: "Anamme Nigeria Enterprise ICT Service Company",
   openGraph: {
-    title: "Anamme Nigeria Enterprise - IT & ICT Service Company",
-    description: "Anamme Nigeria Enterprise - IT & ICT Service Company",
+    title: "Anamme Nigeria Enterprise ICT Service Company",
+    description: "Anamme Nigeria Enterprise ICT Service Company",
   },
 };
 

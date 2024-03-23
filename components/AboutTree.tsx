@@ -17,7 +17,7 @@ export default function AboutTree() {
   const { theme } = useTheme();
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>AME Tree</SectionHeading>
+      <SectionHeading>ANE Tree</SectionHeading>
       <VerticalTimeline lineColor="rgba(255, 255, 255, 0.05)">
         {anammeTree.map((item, index) => (
           <React.Fragment key={index}>
