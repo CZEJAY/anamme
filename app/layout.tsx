@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={dmSans.variable} suppressHydrationWarning>
-      <body className="grid bg-gray-50 dark:text-gray-50 text-gray-950 dark:bg-[#070815] relative ">
+      <body className="grid dark:text-gray-50 text-gray-950 dark:bg-[#070815] relative ">
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />

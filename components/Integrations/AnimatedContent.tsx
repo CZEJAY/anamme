@@ -118,7 +118,11 @@ export default function AnimatedContent() {
               </>
             )}
             <div className="pulsing-icon  relative flex aspect-square shrink-0 items-center justify-center rounded-full border border-blue-50/30 bg-blue-50/25 p-3 text-3xl text-blue-100 opacity-40 md:text-4xl lg:text-5xl">
-              <Icon />
+              {/* <Icon /> */}
+              <div className="block">
+                {item.title.substring(0, 2)}
+                {/* <small className="text-xs">{item.title}</small> */}
+              </div>
               <div  className="text-xs w-40 text-center font-bold  italic absolute -bottom-4  lg:-bottom-5">
                 {item.title}
               </div>
