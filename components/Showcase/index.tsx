@@ -29,7 +29,7 @@ const Showcase = (): JSX.Element => {
           create something awesome.
           <br />
           <span className="text-blue-500">
-            <span className="text-balance">AME</span>
+            <span className="text-balance">ANE</span>
           </span>
         </h2>
       </AnimatedContent>

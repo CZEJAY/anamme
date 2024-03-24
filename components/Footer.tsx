@@ -21,7 +21,7 @@ export default async function Footer() {
           <span className="ml-1 text-center"> All Rights Reserved</span>
         </div>
         <nav aria-label="Footer">
-          <div className="flex gap-6">
+          <div className="flex items-center gap-6">
             {navbarLinks.map((item) => {
               const isActive = pathname === item.link;
               return (
